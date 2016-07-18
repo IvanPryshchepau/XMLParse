@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<books>
+    <book>
+        <title>War and Peace</title>
+        <price>100</price>
+        <owner>
+            <surname>Petrov</surname>
+        </owner>
+    </book>
+    <book>
+        <title>Fight club</title>
+        <price>1000</price>
+        <owner>
+            <surname>Sidorov</surname>
+        </owner>
+    </book>
+</books>
