@@ -1,4 +1,4 @@
-package com.epam.xmlparse.parsers;
+package com.epam.xmlparse.parser;
 
 
 import com.epam.xmlparse.bean.Book;
@@ -31,6 +31,7 @@ public class DOMParser {
         for (int i = 0; i < bookNodes.getLength(); i++) {
             book = new Book();
             Element bookElement = (Element) bookNodes.item(i);
+            book.setId(Integer.parseInt(bookElement.getAttribute("ID")));
             book.setTitle(getSingleChild(bookElement, TagName.TITLE.toString().toLowerCase()).getTextContent().trim());
             book.setPrice(Integer.parseInt(getSingleChild(bookElement, TagName.PRICE.toString().toLowerCase())
                     .getTextContent().trim()));

@@ -1,4 +1,4 @@
-package com.epam.xmlparse.parsers;
+package com.epam.xmlparse.parser;
 
 import com.epam.xmlparse.bean.Book;
 import com.epam.xmlparse.bean.TagName;
@@ -29,6 +29,8 @@ public class StAXParser {
                     switch (tag) {
                         case BOOK: {
                             book = new Book();
+                            Integer id = Integer.parseInt(reader.getAttributeValue(null, "ID"));
+                            book.setId(id);
                             break;
                         }
                     }

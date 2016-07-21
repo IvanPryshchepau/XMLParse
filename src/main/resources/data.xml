@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <books>
-    <book>
+    <book ID="1">
         <title>War and Peace</title>
         <price>100</price>
         <owner>
             <surname>Petrov</surname>
         </owner>
     </book>
-    <book>
+    <book ID="2">
         <title>Fight club</title>
         <price>1000</price>
         <owner>

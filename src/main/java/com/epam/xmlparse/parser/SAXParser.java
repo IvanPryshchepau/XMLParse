@@ -1,10 +1,9 @@
-package com.epam.xmlparse.parsers;
+package com.epam.xmlparse.parser;
 
 import com.epam.xmlparse.bean.Book;
 import com.epam.xmlparse.bean.TagName;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
-import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.DefaultHandler;
 
 import java.util.ArrayList;
@@ -36,6 +35,7 @@ public class SAXParser extends DefaultHandler{
         text = new StringBuilder();
         if (qName.equals("book")){
             book = new Book();
+            book.setId(Integer.parseInt(attributes.getValue("ID")));
         }
     }
 

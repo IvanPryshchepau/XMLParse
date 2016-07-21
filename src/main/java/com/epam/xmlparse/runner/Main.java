@@ -1,9 +1,9 @@
 package com.epam.xmlparse.runner;
 
 import com.epam.xmlparse.bean.Book;
-import com.epam.xmlparse.parsers.DOMParser;
-import com.epam.xmlparse.parsers.SAXParser;
-import com.epam.xmlparse.parsers.StAXParser;
+import com.epam.xmlparse.parser.DOMParser;
+import com.epam.xmlparse.parser.SAXParser;
+import com.epam.xmlparse.parser.StAXParser;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;

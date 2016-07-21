@@ -5,6 +5,7 @@ package com.epam.xmlparse.bean;
  */
 public class Book {
 
+    private Integer id;
     private String title;
     private int price;
     private Owner owner;
@@ -13,10 +14,19 @@ public class Book {
         this.owner = new Owner();
     }
 
-    public Book(String title, int price, String surname) {
+    public Book(Integer id, String title, int price, String surname) {
+        this.id = id;
         this.title = title;
         this.price = price;
         this.owner = new Owner(surname);
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -45,7 +55,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" +
+        return "Book " + id + " {" +
                 "title='" + title + '\'' +
                 ", price=" + price +
                 ", " + owner.toString() +
